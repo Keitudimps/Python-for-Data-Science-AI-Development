@@ -1,6 +1,7 @@
 # Python for Data Science, AI & Development
 
 This Course is provided by **IBM** on Coursera   
+**Instructor:** [Joseph Santarcangelo] (https://www.coursera.org/instructor/~28511493)
 This repository contains notes, code examples, and exercises from the Coursera course Python for Data Science, AI &amp; Development offered by IBM. The course provides a comprehensive introduction to Python programming with a focus on applications in data science, artificial intelligence, and software development.
 
 ---
