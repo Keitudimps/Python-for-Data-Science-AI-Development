@@ -2,7 +2,7 @@
 
 This Course is provided by **IBM** on Coursera   
 **Instructor:** [Joseph Santarcangelo](https://www.coursera.org/instructor/~28511493)  
-This repository contains notes, code examples, and exercises from the Coursera course Python for Data Science, AI &amp; Development offered by IBM. The course provides a comprehensive introduction to Python programming with a focus on applications in data science, artificial intelligence, and software development.
+This repository contains notes, code examples, and exercises from the Coursera course Python for Data Science, AI & Development offered by IBM. The course provides a comprehensive introduction to Python programming with a focus on applications in data science, artificial intelligence, and software development.
 
 ---
 
@@ -90,3 +90,82 @@ Common Python data types include:
 Example:
 ```python
 (32 + 0) * 60  # Result: 1920
+```
+
+---
+
+## Compound Data Structures in Python
+
+### Tuples
+- Tuples are an **ordered sequence** enclosed in parentheses `()`.
+- Elements can be of **different data types**: integers, floats, strings, etc.
+- Each element can be accessed by an **index** (starting at `0`).
+- Tuples are **immutable** (cannot be changed once created).
+- Tuples can be **nested** (tuples inside tuples).
+- Support **slicing** operations like lists.
+
+Example:
+```python
+ratings = (10, 9, 8, "Great")
+print(ratings[0])     # 10
+print(ratings[-1])    # Great
+print(ratings[0:3])   # (10, 9, 8)
+```
+
+---
+
+### Lists
+- Lists are an **ordered sequence** enclosed in square brackets `[]`.
+- **Mutable**: elements can be added, changed, or removed.
+- Can store different data types and support nesting.
+- Support slicing and concatenation.
+
+**Common methods:**
+- `append()` → add one element  
+- `extend()` → add multiple elements  
+- `del` → remove an element  
+- `split()` → convert strings to lists  
+
+Example:
+```python
+L = ["Python", 3.7, 2023]
+L.append("AI")
+print(L)  # ["Python", 3.7, 2023, "AI"]
+```
+
+---
+
+### Dictionaries
+- A **collection of key-value pairs** enclosed in `{}`.
+- Keys must be **unique** and **immutable** (e.g., strings, numbers).
+- Values can be of any data type.
+- Access values using their keys instead of indexes.
+
+**Common methods:**
+- `.keys()` → returns all keys  
+- `.values()` → returns all values  
+
+Example:
+```python
+album = {"Thriller": 1982, "Back in Black": 1980}
+print(album["Thriller"])  # 1982
+```
+
+---
+
+### Sets
+- An **unordered collection** of unique elements enclosed in `{}`.
+- Automatically removes duplicates.
+- Support **mathematical set operations** like:
+  - `union (|)`
+  - `intersection (&)`
+  - `issubset()`
+
+Example:
+```python
+A = {"Python", "AI", "Data"}
+B = {"AI", "ML"}
+
+print(A & B)  # {"AI"}
+print(A | B)  # {"Python", "AI", "Data", "ML"}
+```
